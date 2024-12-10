@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MicroVelocity Champions League</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="carrito.css">
+    <link rel="icon" type="image/png" href="MRC.png">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="menu">
+        <section class="menu__container">
+            <h1 class="menu__logo">MicroVelocity <br> Champions League</h1>
+
+            <ul class="menu__links">
+                <li class="menu__item">
+                    <a href="index.html" class="menu__link">Inicio</a>
+                </li>
+    
+                <li class="menu__item menu__item--show">
+                    <a href="producto.html" class="menu__link">Productos <img src="assets/arrow.svg" alt="Flecha" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="modelo.html" class="menu__link menu__link--inside">Modelos</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="compra.html" class="menu__link menu__link--inside">Compra</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="seguimiento.html" class="menu__link menu__link--inside">Seguimiento</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu__item menu__item--show">
+                    <a href="servicios.html" class="menu__link">Servicios <img src="assets/arrow.svg" alt="Flecha" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="carrito.html" class="menu__link menu__link--inside">Carrito</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="sercliente.html" class="menu__link menu__link--inside">Servicio al Cliente</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="ubicacion.html" class="menu__link menu__link--inside">Ubicacion</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu__item">
+                    <a href="contacto.html" class="menu__link">Contacto</a>
+                </li>
+            </ul>
+
+            <div class="menu__hamburguer">
+                <img src="assets/menu.svg" alt="Menú" class="menu__img">
+            </div>
+        </section>
+    </nav>
+
+    <!-- Encabezado con imagen -->
+    <div class="encabezado-imgdiez">
+        <p>Carrito</p>
+        <h1>MicroVelocity</h1>
+        <p>Champions League</p>
+    </div>
+    <!-- División con fondo de rayas -->
+<div class="division-rayada"></div>
+
+
+    <script src="js/app.js"></script>
+
+    <!-- Contenido principal -->
+    <main class="cuerpo">
+        <div class="container">
+
+            <div class="banner">
+                <img src="img/banner.jpg" alt="">
+            </div>
+    
+            <h1 class="title">Nuevos Productos</h1>
+    
+            <div class="product-grid">
+                <div class="product-grid__item">
+                    <div class="product-grid__imagen">
+                        <img src="img/naranja.jpg" alt="">
+                    </div>
+    
+                    <div class="product-grid__info">
+                        <p class="product-grid__name">Naranja</p>
+                        <p class="product-grid__price">$9.00 / kg</p>
+    
+                        <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito"  >Agregar al carrito</a>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="product-grid__item">
+                    <div class="product-grid__imagen">
+                        <img src="img/manzana.jpg" alt="">
+                    </div>
+    
+                    <div class="product-grid__info">
+                        <p class="product-grid__name">Manzana</p>
+                        <p class="product-grid__price">$5.00 / kg</p>
+                        <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito" >Agregar al carrito</a>
+                    </div>
+    
+                </div>
+    
+                <div class="product-grid__item">
+                    <div class="product-grid__imagen">
+                        <img src="img/limon.jpg" alt="">
+                    </div>
+    
+                    <div class="product-grid__info">
+                        <p class="product-grid__name">Limón</p>
+                        <p class="product-grid__price">$3.00 / kg</p>
+                        <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
+                    </div>
+    
+                </div>
+    
+                <div class="product-grid__item">
+                    <div class="product-grid__imagen">
+                        <img src="img/platano.jpg" alt="">
+                    </div>
+    
+                    <div class="product-grid__info">
+                        <p class="product-grid__name">Platano</p>
+                        <p class="product-grid__price">$5.50 / kg</p>
+                        <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            <!--MODAL CARRITO-->
+            <div class="modal" id="jsModalCarrito">
+                <div class="modal__container">
+                    <button type="button" class="modal__close fa-solid fa-xmark jsModalClose "></button>
+    
+                    <div class="modal__info">
+                        <div class="modal__header">
+                            <h2><i class="fa-brands fa-opencart"></i>Carrito</h2>
+                        </div>
+    
+                        <div class="modal__body">
+                            <div class="modal__list">
+                                <div class="modal__item">
+                                    <div class="modal__thumb">
+                                        <img src="img/naranja.jpg" alt="Naranja">
+                                    </div>
+                                    <div class="modal__text-product">
+                                        <p>Naranja</p>
+                                        <p><strong>$9.00 / kg</strong></p>
+                                    </div>
+                                </div>
+    
+    
+                                <div class="modal__item">
+                                    <div class="modal__thumb">
+                                        <img src="img/manzana.jpg" alt="Naranja">
+                                    </div>
+                                    <div class="modal__text-product">
+                                        <p>Manzana</p>
+                                        <p><strong>$5.00 / kg</strong></p>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <div class="modal__footer">
+                            <div class="modal__list-price">
+                                <ul>
+                                    <li>Subtotal: <strong>$14.00</strong></li>
+                                    <li>Descuento: <strong>$0.00</strong></li>
+                                </ul>
+                                <h4 class="modal__total-cart"> Total: $14.00</h4>
+                            </div>
+    
+                            <div class="modal__btns">
+                                <a href="#" class="btn-border">Ir al carrito</a>
+                                <a href="#" class="btn-primary">Comprar Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+        <script src="js/app.js"></script>
+        <script src="carrito.js"></script>
+       
+    </main>
+
+    <script src="scripts.js"></script>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <h2>MicroVelocity Champions League</h2>
+            </div>
+            <div class="footer__info">
+                <p>Dirección: Reynosa, Tamaulipas, México. Col: Velocity, Calle: Racing, Num: 11</p>
+                <p>Teléfono: <a href="tel:+528995011191">+52-899-501-1191</a></p>
+                <p>Email: <a href="mailto:microvelocitychampionsleague@gmail.com">microvelocitychampionsleague@gmail.com</a></p>
+            </div>
+            <div class="footer__social">
+                <h4>Síguenos:</h4>
+                <a href="https://www.facebook.com/profile.php?id=61568816638132" target="_blank" rel="noopener noreferrer">
+                    <img src="facebook.avif" alt="Facebook">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="x.webp" alt="Twitter">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="instagram.webp" alt="Instagram">
+                </a>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <p>&copy; 2024 MicroVelocity Champions League. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
