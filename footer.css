@@ -1,0 +1,102 @@
+/* Si quieres aplicar diferentes estilos al pie de página, puedes hacerlo aquí */
+footer p {
+    text-align: left;  /* Alineación del texto */
+    margin: 0; /* Eliminar márgenes */
+    padding: 10px; /* Espaciado más pequeño */
+}
+
+
+/* Pie de página */
+.footer {
+    background-color: #1A202C; /* Combina con el menú */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 20px 15px; /* Espaciado más equilibrado */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    
+}
+
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 10px 15px;
+    gap: 20px; /* Separación entre bloques */
+}
+
+.footer-info, .footer-contact {
+    flex: 1; /* Los bloques ocupan el mismo espacio */
+    min-width: 250px; /* Mínimo tamaño para evitar colapsos */
+    margin: 0 auto; /* Centrado para pantallas pequeñas */
+}
+
+.footer-info h5, .footer-contact a {
+    margin-bottom: 4px; /* Espaciado entre elementos */
+    font-weight: 400; /* Peso de texto más ligero */
+}
+
+.footer__logo h2 {
+    font-size: 24px; /* Tamaño destacado */
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase; /* Letras en mayúsculas */
+}
+
+.footer__info {
+    text-align: left; /* Alineación a la izquierda */
+    margin-bottom: 15px;
+    font-size: 14px; /* Tamaño de texto uniforme */
+}
+
+.footer__info a {
+    color: #5e7094; /* Enlace en tono azul grisáceo */
+    text-decoration: none;
+}
+
+.footer__info a:hover {
+    text-decoration: underline;
+}
+
+.footer__social {
+    text-align: center;
+}
+
+.footer__social h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer__social a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Efecto hover suave */
+}
+
+.footer__social img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1); /* Convierte iconos negros en blancos */
+}
+
+.footer__social a:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
+}
+
+.footer-bottom {
+    border-top: 1px solid #798499; /* Línea separadora */
+    padding-top: 10px; /* Espaciado superior */
+    font-size: 14px; /* Texto pequeño */
+    margin-top: 20px;
+    color: #798499; /* Color gris claro */
+}
+
+.footer__copy {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #798499;
+}
+

@@ -1,0 +1,14 @@
+
+.section-maps {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .mapa-MN {
+      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.322);
+      border-radius: 7px;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+    }
+  }

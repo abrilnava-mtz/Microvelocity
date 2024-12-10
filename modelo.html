@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>MicroVelocity Champions League</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navegador.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="carrousel.css">
+    <link rel="stylesheet" href="encabezado.css">
     <link rel="stylesheet" href="gallery.css">
-    <link rel="icon" type="image/png" href="MRC.png">
+    <link rel="stylesheet" href="gallery.js">
+    <link rel="icon" type="image/png" href="MCL.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+
 </head>
 <body>
     <!-- Menú de navegación -->
@@ -28,9 +38,6 @@
                         </li>
                         <li class="menu__inside">
                             <a href="compra.html" class="menu__link menu__link--inside">Compra</a>
-                        </li>
-                        <li class="menu__inside">
-                            <a href="seguimiento.html" class="menu__link menu__link--inside">Seguimiento</a>
                         </li>
                     </ul>
                 </li>
@@ -55,7 +62,9 @@
                     <a href="contacto.html" class="menu__link">Contacto</a>
                 </li>
             </ul>
-
+            <div class="shopping-icon">
+              <a href="" class="fas fa-shopping-cart"></a>
+            </div>
             <div class="menu__hamburguer">
                 <img src="assets/menu.svg" alt="Menú" class="menu__img">
             </div>
@@ -70,7 +79,7 @@
     </div>
     <!-- División con fondo de rayas -->
 <div class="division-rayada"></div>
-
+<br>
 
     <script src="js/app.js"></script>
     <script src="ap.js"></script>
@@ -79,26 +88,56 @@
     <script src="gallery.js"></script>
     <!-- Contenido principal -->
     <main class="cuerpo">
+      <br>
         <div class="container">
-            <h2 class="text-center">¿Qué ofrecemos?</h2>
-            <div class="lightbox-gallery">
-                <div><img src="https://picsum.photos/id/343/300/300" data-image-hd="https://picsum.photos/id/343/600/600" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaecati ipsam deserunt fugit dolore delectus quam, maxime nisi quo."></div>
-                <div><img src="https://picsum.photos/id/112/300/300" data-image-hd="https://picsum.photos/id/112/600/600" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime accusamus officiis dignissimos doloribus consectetur harum eos sapiente optio aut minima."></div>
-                <div><img src="https://picsum.photos/id/155/300/300" data-image-hd="https://picsum.photos/id/155/600/600" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates veritatis similique, amet, maiores soluta recusandae cupiditate, sed perspiciatis fugit minima, sunt dolores cum earum deserunt illo ipsum!"></div>
-                <div><img src="https://picsum.photos/id/11/300/300" data-image-hd="https://picsum.photos/id/11/600/600" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque laudantium dignissimos tenetur eos unde quidem repellat officiis nemo laboriosam necessitatibus deleniti commodi quis aliquid est atque tempora aut, nihil!"></div>
-                <div><img src="https://picsum.photos/id/434/300/300" data-image-hd="https://picsum.photos/id/434/600/600" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto minus consequatur soluta quaerat itaque, laboriosam quis a facilis, cumque, deleniti quas aperiam voluptate dolore. Enim nostrum sit eaque, porro eligendi illo placeat?"></div>
-                <div><img src="https://picsum.photos/id/101/300/300" data-image-hd="https://picsum.photos/id/101/600/600" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit quam, id aliquam totam aperiam quas rem debitis voluptatem pariatur, illo accusamus facilis eius ipsa! Reprehenderit libero, quas iste repudiandae distinctio, quos dignissimos."></div>
-            </div>
-          </div>
-        
-        
-        <div class="text-center github-link">
-          
-          <a class="github-link" href="https://github.com/humbl3man/lightboxify" target="_blank"><i class="fa fa-github"></i> Github Source Code</a>
-          
-        </div>
     </main>
     
+    <div class="swiper productsCarousel" id="productsCarousel">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="productsCarousel-swiper-slide">
+          <a href="">
+            <img src="assets/media/generic-photos/carousel/1.png" alt="" />
+          </a>
+        </div>
+        <div class="swiper-slide" id="productsCarousel-swiper-slide">
+          <a href="">
+            <img src="assets/media/generic-photos/carousel/2.png" alt="" />
+          </a>
+        </div>
+        <div class="swiper-slide" id="productsCarousel-swiper-slide">
+          <a href="">
+            <img src="assets/media/generic-photos/carousel/3.png" alt="" />
+          </a>
+        </div>
+        <div class="swiper-slide" id="productsCarousel-swiper-slide">
+          <a href="">
+            <img src="assets/media/generic-photos/carousel/4.png" alt="" />
+          </a>
+        </div>
+        <div class="swiper-slide" id="productsCarousel-swiper-slide">
+          <a href="">
+            <img src="assets/media/generic-photos/carousel/5.png" alt="" />
+          </a>
+        </div>
+        <div class="swiper-slide" id="productsCarousel-swiper-slide">
+          <a href="">
+            <img src="assets/media/generic-photos/carousel/6.png" alt="" />
+          </a>
+        </div>
+        <div class="swiper-slide" id="productsCarousel-swiper-slide">
+          <a href="">
+            <img src="assets/media/generic-photos/carousel/7.png" alt="" />
+          </a>
+        </div>
+        <div class="swiper-slide" id="productsCarousel-swiper-slide">
+          <a href="">
+            <img src="assets/media/generic-photos/carousel/8.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
 
     <!-- Pie de página -->
     <footer class="footer">

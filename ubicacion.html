@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>MicroVelocity Champions League</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image/png" href="MRC.png">
+    <link rel="stylesheet" href="navegador.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="carrousel.css">
+    <link rel="stylesheet" href="encabezado.css">
+    <link rel="stylesheet" href="ubicacion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+
+    <link rel="icon" type="image/png" href="MCL.png">
 </head>
 <body>
 
@@ -30,9 +38,7 @@
                         <li class="menu__inside">
                             <a href="compra.html" class="menu__link menu__link--inside">Compra</a>
                         </li>
-                        <li class="menu__inside">
-                            <a href="seguimiento.html" class="menu__link menu__link--inside">Seguimiento</a>
-                        </li>
+                        
                     </ul>
                 </li>
     
@@ -41,13 +47,13 @@
     
                     <ul class="menu__nesting">
                         <li class="menu__inside">
-                            <a href="#" class="menu__link menu__link--inside">Carrito</a>
+                            <a href="carrito.html" class="menu__link menu__link--inside">Carrito</a>
                         </li>
                         <li class="menu__inside">
-                            <a href="#" class="menu__link menu__link--inside">Servicio al Cliente</a>
+                            <a href="sercliente.html" class="menu__link menu__link--inside">Servicio al Cliente</a>
                         </li>
                         <li class="menu__inside">
-                            <a href="#" class="menu__link menu__link--inside">Ubicacion</a>
+                            <a href="ubicacion.html" class="menu__link menu__link--inside">Ubicacion</a>
                         </li>
                     </ul>
                 </li>
@@ -55,6 +61,10 @@
                 <li class="menu__item">
                     <a href="contacto.html" class="menu__link">Contacto</a>
                 </li>
+                <div class="shopping-icon">
+                    <a href="" class="fas fa-shopping-cart"></a>
+                  </div>
+            
             </ul>
 
             <div class="menu__hamburguer">
@@ -72,23 +82,20 @@
     <!-- División con fondo de rayas -->
 <div class="division-rayada"></div>
 
-
-    <h1>Ubicación de Nuestra Empresa</h1>
+<div class="main-content">
+    <h1 class="sub">Ubicación de Nuestra Empresa</h1>
     <p>Nos encontramos en:</p>
-    <div>
-        <!-- Incrustar el iframe aquí -->
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d447.99274350642986!2d-98.27878070919266!3d26.068153554280766!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86650f28f504895b%3A0xebec37ca26b1477a!2sBachillerato%20Militar%20Reynosa!5e0!3m2!1ses-419!2smx!4v1732715791269!5m2!1ses-419!2smx" 
-            width="600" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"
-            align="center">
+    <section class="section-maps">
+        <iframe class="mapa-MN"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d447.99274350642986!2d-98.27878070919266!3d26.068153554280766!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86650f28f504895b%3A0xebec37ca26b1477a!2sBachillerato%20Militar%20Reynosa!5e0!3m2!1ses-419!2smx!4v1732715791269!5m2!1ses-419!2smx"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+    
+      </section>
     </div>
-    <br>
-
     
     <!-- Pie de página -->
     <footer class="footer">

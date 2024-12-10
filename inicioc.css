@@ -1,0 +1,92 @@
+/* Carousel Container */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Track Container */
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Slides */
+.carousel-slide {
+  min-width: 300px;
+  flex: 0 0 25%; /* Adjust for 4 slides visible */
+  padding: 1rem;
+  text-align: center;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.carousel-btn {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.prev {
+  left: 0;
+}
+
+.carousel-btn.next {
+  right: 0;
+}
+.carousel-track-container {
+    height: 400px; /* Ajusta según las imágenes */
+}
+@media (max-width: 768px) {
+    .carousel-slide {
+      flex: 0 0 50%; /* 2 diapositivas visibles en pantallas pequeñas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-slide {
+      flex: 0 0 100%; /* 1 diapositiva visible en móviles */
+    }
+  }
+  .card img {
+    width: 100%; /* Adapta al ancho de la tarjeta */
+    height: auto; /* Mantén la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  .carousel-slide {
+  flex: 0 0 25%; /* 4 diapositivas visibles */
+  min-width: 300px; /* Ancho mínimo */
+  max-width: 400px; /* Opcional, para evitar diapositivas demasiado grandes */
+  padding: 1rem;
+  box-sizing: border-box; /* Asegura que padding no afecte el tamaño */
+}
